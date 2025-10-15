@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+#hourTimerDisplay,
+#secondTimerDisplay {
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#animationBox {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin-top: 20px;
+  display: none;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); background-color: coral; }
+  50% { transform: scale(1.2); background-color: orange; }
+  100% { transform: scale(1); background-color: coral; }
+}
